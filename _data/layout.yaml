@@ -1,0 +1,15 @@
+- id: about
+  title: About
+  page: about.html
+- id: services
+  title: Services
+  page: services.html
+- id: portfolio
+  title: Portfolio
+  page: portfolio.html
+- id: blog
+  title: Blog
+  page: blog.html
+- id: contact
+  title: Contact
+  page: contact.html
