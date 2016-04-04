@@ -257,14 +257,26 @@ fieldset[disabled] .btn-xl.active {
 header {
     text-align: center;
     color: #fff;
-    background-attachment: scroll;
-    background-image: $header-image;
-    background-position: center center;
-    background-repeat: none;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    position: relative;
+    display: block;
+    background-color: rgba(0,0,0,0.3);
+    &::after {
+      content: "";
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;
+      background-attachment: scroll;
+      background-image: $header-image;
+      background-position: center center;
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+      -o-background-size: cover;
+    }
 }
 
 header .intro-text {
