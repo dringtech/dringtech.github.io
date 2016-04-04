@@ -11,9 +11,11 @@ $color-secondary: #33cc33; // was fec503  websage == #ffcc00
 $color-secondary-dark: #333;
 
 $fontstack: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
-$fontstack-header: league-gothic, sans-serif;
+$fontstack-header: "League Gothic", sans-serif;
 $fontstack-3: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-$fontstack-brand: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+
+$header-image: url(../img/coffee-notes.jpg);
+$logo-image: url(../img/dringtech-compact-white.png);
 
 $header-letter-spacing: 0.162791em;
 
