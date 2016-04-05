@@ -13,7 +13,6 @@ $color-secondary-dark: #333;
 $fontstack: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
 $fontstack-header: "League Gothic", sans-serif;
 $fontstack-header-condensed: "League Gothic Condensed", sans-serif;
-// $fontstack-3: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
 
 $header-image: url(../img/coffee-notes.jpg);
 $logo-image: url(../img/dringtech-compact-white.png);
@@ -21,6 +20,8 @@ $logo-image: url(../img/dringtech-compact-white.png);
 $header-letter-spacing: 0.2em;
 
 @import
+  "bootstrap.min.css",
+  "font-awesome/css/font-awesome.min.css",
   "league-gothic",
   "roboto-slab",
   "dringtech"
