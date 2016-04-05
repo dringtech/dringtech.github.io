@@ -329,26 +329,24 @@ header .intro-text {
     }
 }
 
-section {
+section, aside {
     padding: 100px 0;
-}
-
-section h2.section-heading {
-    margin-top: 0;
-    margin-bottom: 15px;
-    font-size: 40px;
-}
-
-section h3.section-subheading {
-    margin-bottom: 75px;
-    text-transform: none;
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 400;
+    h2.section-heading {
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-size: 40px;
+    }
+    h3.section-subheading {
+        margin-bottom: 75px;
+        text-transform: none;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 400;
+    }
 }
 
 @media(min-width:768px) {
-    section {
+    section, aside {
         padding: 150px 0;
     }
 }
