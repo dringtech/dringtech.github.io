@@ -5,5 +5,5 @@ layout: default
 {% include header.html %}
 
 {% for section in site.data.layout %}
-  {% include_relative _sections/{{ section.page }} %}
+  {% include section.html context=section %}
 {% endfor %}

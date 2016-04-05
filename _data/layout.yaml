@@ -1,15 +1,20 @@
 - id: about
   title: About
+  subheading: All about me
   page: about.html
 - id: services
   title: Services
+  subheading: A range of services for all your IT needs
   page: services.html
 - id: portfolio
   title: Portfolio
+  subheading: Some examples of work I have completed for my clients
   page: portfolio.html
 - id: blog
   title: Blog
+  subheading: My writings
   page: blog.html
 - id: contact
-  title: Contact
+  title: Contact Me
+  subheading: Get in touch
   page: contact.html
