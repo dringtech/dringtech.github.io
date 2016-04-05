@@ -1,19 +1,19 @@
 <!-- Portfolio Grid Section -->
-            <div class="row">
-            {% for post in site.posts %}
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="/img/portfolio/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>{{ post.title }}</h4>
-                        <p class="text-muted">{{ post.subtitle }}</p>
-                    </div>
+<div class="row">
+  {% for case in site.data.portfolio %}
+    <div class="col-md-4 col-sm-6 portfolio-item">
+        <a href="#portfolioModal{{ case.modal-id }}" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                    <i class="fa fa-plus fa-3x"></i>
                 </div>
-            {% endfor %}
             </div>
+            <img src="/img/portfolio/{{ case.thumbnail }}" class="img-responsive img-centered" alt="">
+        </a>
+        <div class="portfolio-caption">
+            <h4>{{ case.title }}</h4>
+            <p class="text-muted">{{ case.subtitle }}</p>
+        </div>
+    </div>
+  {% endfor %}
+</div>

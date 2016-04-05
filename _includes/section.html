@@ -7,6 +7,6 @@
           <h3 class="section-subheading text-muted">{{ include.context.subheading }}</h3>
         </div>
     </div>
-    {% include sections/{{ include.context.page }} %}
+    {% include sections/{{ include.context.page }} context=include.context %}
   </div>
 </section>
