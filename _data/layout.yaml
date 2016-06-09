@@ -1,12 +1,7 @@
 - id: services
   title: Services
-  subheading: A range of services for all your IT needs
+  subheading: I offer a range of services tailored to your business needs
   page: services.html
-
-- id: portfolio
-  title: Portfolio
-  subheading: Some examples of work I have completed for my clients
-  page: portfolio.html
 
 - id: about
   title: About

@@ -1,0 +1,14 @@
+- id: smb
+  title: Small and Medium Business support
+  precis: smb.md
+  icon: fa-support
+
+- id: consulting
+  title: Independent consulting
+  precis: consulting.md
+  icon: fa-tasks
+
+- id: contracting
+  title: Contracting
+  precis: contracting.md
+  icon: fa-user-plus
