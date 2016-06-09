@@ -9,6 +9,6 @@
   icon: fa-tasks
 
 - id: contracting
-  title: Contracting
+  title: Enterprise Contracting
   precis: contracting.md
   icon: fa-user-plus

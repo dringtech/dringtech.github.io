@@ -1,19 +1,25 @@
 - id: services
   title: Services
-  subheading: I offer a range of services tailored to your business needs
+  subheading: Services tailored to your business needs
   page: services.html
 
-- id: about
-  title: About
-  subheading: All about me
-  page: about.html
+# - id: about
+#   title: About
+#   subheading: All about me
+#   page: about.html
 
-- id: blog
-  title: Blog
-  subheading: My writings
-  page: blog.html
+# - id: blog
+#   title: Blog
+#   subheading: My writings
+#   page: blog.html
 
 - id: contact
   title: Contact Me
   subheading: Get in touch
   page: contact.html
+
+# - id: memberships
+#   title: Professional Memberships
+#   subheading: Here are a selection of my professional memberships and certifications
+#   page: memberships.html
+#   nav: false

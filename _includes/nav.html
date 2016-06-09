@@ -19,9 +19,11 @@
                         <a href="#page-top"></a>
                     </li>
                     {% for s in site.data.layout %}
-                    <li>
-                        <a class="page-scroll" href="#{{s.id}}">{{ s.title }}</a>
-                    </li>
+                      {% if s.nav != false %}
+                      <li>
+                          <a class="page-scroll" href="#{{s.id}}">{{ s.title }}</a>
+                      </li>
+                      {% endif %}
                     {% endfor %}
                 </ul>
             </div>
