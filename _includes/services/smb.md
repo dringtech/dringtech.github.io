@@ -17,8 +17,10 @@ implementation.
 * Prepare for business expansion by advising on appropriate use of technology
 * Implement small, manageable projects to progress my recommendations
 
-Contact me for a no-obligation discussion of your needs, and let me help
-you make technology work for your business.
+[Contact me][CONTACT] for a no-obligation discussion of your needs, and let me
+help you make technology work for your business.
+
+[CONTACT]: #contact "Contact me form"
 
 <!--
 After our first meeting I will prepare a brief report documenting your current
