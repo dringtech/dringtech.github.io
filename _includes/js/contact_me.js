@@ -21,3 +21,13 @@ $(function() {
 $('#name').focus(function() {
     $('#success').html('');
 });
+
+// Show the thanks form when redirecting from capsule
+$(function() {
+  var targetModal = "#contactThanksModal"
+  if (window.location.hash == targetModal) {
+    $(targetModal).modal('show').on('hidden.bs.modal', function () {
+      window.location.hash = "";
+    });
+  }
+});

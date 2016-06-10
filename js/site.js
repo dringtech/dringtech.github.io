@@ -12,8 +12,8 @@
 {% include js/cbpAnimatedHeader.js %}
 
 // Contact Form JavaScript
-{% include js/jqBootstrapValidation.js %}
 {% include js/contact_me.js %}
+{% include js/jqBootstrapValidation.js %}
 
 // Custom Theme JavaScript
 {% include js/agency.js %}
