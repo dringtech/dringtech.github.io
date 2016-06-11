@@ -1,4 +1,4 @@
-url: http://dringtech.github.io
+url: http://dringtech.com
 baseurl:
 
 # Site settings
@@ -19,8 +19,9 @@ social:
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+  - line: 13 Melbourne Street
+  - line: Hebden Bridge
+  - line: West Yorkshire
 
 # Build settings
 markdown: kramdown

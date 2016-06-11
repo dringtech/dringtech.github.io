@@ -25,13 +25,12 @@
                 <div class="clearfix"></div>
                 <div class="col-lg-12 text-center">
                     <div id="success"></div>
+                    {% comment %}<input type="hidden" name="DEVELOPER" value="TRUE">{% endcomment %}
                     <input type="hidden" name="FORM_ID" value="d3db5e42-225c-45fc-8391-d64373578e9c">
-                    <input type="hidden" name="COMPLETE_URL" value="{{ '/#contactThanksModal' | prepend: site.baseurl | prepend: site.url }}">
+                    <input type="hidden" name="COMPLETE_URL" value="{{ '/thanks/' | prepend: site.baseurl | prepend: site.url }}">
                     <button type="submit" value="Send" class="btn btn-xl">Send Message</button>
                 </div>
             </div>
         </form>
     </div>
 </div>
-
-{% include modal.html id="contactThanksModal" body="thanks.html" %}
