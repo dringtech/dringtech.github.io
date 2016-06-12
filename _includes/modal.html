@@ -1,12 +1,12 @@
 <aside class="modal fade" id="{{ include.id }}" tabindex="-1" role="dialog" aria-hidden="true">
   <div>
     <header data-dismiss="modal">
-      <div class="lr"><div class="rl"></div></div>
+      <i class="fa fa-close"></i>
+      <h1>{{ include.title }}</h1>
     </header>
     <section class="container">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
-          <h1>{{ include.title }}</h1>
           {{ include.content }}
         </div>
       </div>
