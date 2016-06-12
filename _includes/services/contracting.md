@@ -1,5 +1,3 @@
-I am available for short to medium term contract work.
-
 I have skills in the following areas:
 
 * Enterprise Architecture

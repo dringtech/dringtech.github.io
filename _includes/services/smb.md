@@ -1,7 +1,3 @@
-Whether you're a sole trader, a fresh startup or an established business with
-growth plans, you sometimes need a bit of support to make the most of the
-technology at your disposal.
-
 I have 20 years experience delivering and supporting business systems
 for some of the largest retailers, financial services companies and government
 customers in the UK.

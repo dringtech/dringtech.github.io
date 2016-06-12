@@ -2,13 +2,22 @@
   title: Small and Medium Business support
   precis: smb.md
   icon: fa-support
+  summary: >
+    Whether you're a sole trader, a fresh startup or an established business
+    with growth plans, you sometimes need a bit of support to make the most
+    of the technology at your disposal.
 
 - id: consulting
   title: Independent consulting
   precis: consulting.md
   icon: fa-tasks
+  summary: >
+    I am available for targetted consulting engagements to help you plan
+    and execute your own engagements.
 
 - id: contracting
   title: Enterprise Contracting
   precis: contracting.md
   icon: fa-user-plus
+  summary: >
+    I am available for short to medium term contract work.
