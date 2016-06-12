@@ -19,7 +19,6 @@
 
   {% capture modalRaw %}{% include services/{{ service.precis }} %}{% endcapture %}
   {% capture modalContent %}
-    <p>{{ service.summary }}</p>
     {{ modalRaw | markdownify }}
   {% endcapture %}
   {% include modal.html id=modalId title=service.title content=modalContent %}
