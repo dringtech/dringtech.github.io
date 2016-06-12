@@ -14,7 +14,7 @@
       <h1>{{service.title}}</h1>
     </header>
     <p>{{ service.summary }}</p>
-    <p><a class="btn btn-xl" href="#{{ modalId }}" class="portfolio-link" data-toggle="modal">Read more</a></p>
+    <p class="text-center"><a class="btn btn-xl" href="#{{ modalId }}" class="portfolio-link" data-toggle="modal">Read more</a></p>
   </article>
 
   {% capture modalRaw %}{% include services/{{ service.precis }} %}{% endcapture %}
