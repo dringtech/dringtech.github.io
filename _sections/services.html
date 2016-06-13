@@ -23,7 +23,8 @@ order: 10
     <p class="text-center"><a class="btn btn-xl" href="#{{ modalId }}" class="portfolio-link" data-toggle="modal">Read more</a></p>
   </article>
 
-  {% include modal.html id=modalId title=service.title content=service %}
+  {% capture modalContent %}{{ service.content | markdownify }}{% endcapture %}
+  {% include modal.html id=modalId title=service.title content=modalContent %}
 
 {% endfor %}
 
