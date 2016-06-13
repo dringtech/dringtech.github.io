@@ -17,3 +17,6 @@
 
 // Custom Theme JavaScript
 {% include js/agency.js %}
+
+// Google analytics
+{% include js/googleanalytics.js %}
