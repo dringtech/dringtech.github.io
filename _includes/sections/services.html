@@ -1,9 +1,11 @@
 <!-- Services Section -->
 <div class="row">
 
-{% for service in site.data.services %}
+{% assign services = site.services | sort: 'order' %}
 
-  {% capture modalId %}{{ service.id }}Modal{% endcapture %}
+{% for service in services %}
+
+  {% capture modalId %}{{ service.slug }}Modal{% endcapture %}
 
   <article class="col-md-4">
     <header>
@@ -11,17 +13,13 @@
         <i class="fa fa-circle fa-stack-2x text-primary"></i>
         <i class="fa {{ service.icon }} fa-stack-1x fa-inverse"></i>
       </span>
-      <h1>{{service.title}}</h1>
+      <h1>{{ service.title }}</h1>
     </header>
-    <p>{{ service.summary }}</p>
+    <p>{{ service.excerpt }}</p>
     <p class="text-center"><a class="btn btn-xl" href="#{{ modalId }}" class="portfolio-link" data-toggle="modal">Read more</a></p>
   </article>
 
-  {% capture modalRaw %}{% include services/{{ service.precis }} %}{% endcapture %}
-  {% capture modalContent %}
-    {{ modalRaw | markdownify }}
-  {% endcapture %}
-  {% include modal.html id=modalId title=service.title content=modalContent %}
+  {% include modal.html id=modalId title=service.title content=service %}
 
 {% endfor %}
 

@@ -1,3 +1,13 @@
+---
+title: Small and Medium Business support
+icon: fa-support
+order: 1
+---
+
+Whether you're a sole trader, a fresh startup or an established business
+with growth plans, you sometimes need a bit of support to make the most
+of the technology at your disposal.
+
 I have 20 years experience delivering and supporting business systems
 for some of the largest retailers, financial services companies and government
 customers in the UK.
@@ -13,10 +23,10 @@ implementation.
 * Prepare for business expansion by advising on appropriate use of technology
 * Implement small, manageable projects to progress my recommendations
 
-[Contact me][CONTACT] for a no-obligation discussion of your needs, and let me
+Contact me for a no-obligation discussion of your needs, and let me
 help you make technology work for your business.
 
-[CONTACT]: #contact "Contact me form"
+<!-- [CONTACT]: #contact "Contact me form" -->
 
 <!--
 After our first meeting I will prepare a brief report documenting your current

@@ -33,3 +33,6 @@ permalink: pretty
 compress_html:
   clippings: all
   comments: all
+
+collections:
+  - services
