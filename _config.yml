@@ -28,3 +28,8 @@ address:
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+# HTML Compression using https://github.com/penibelst/jekyll-compress-html
+compress_html:
+  clippings: all
+  comments: all
