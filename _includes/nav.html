@@ -18,12 +18,11 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    {% for s in site.data.layout %}
-                      {% if s.nav != false %}
+                    {% assign links = site.sections | where: "nav","true" | where: "enabled","true" | sort: 'order'%}
+                    {% for s in links %}
                       <li>
-                          <a class="page-scroll" href="#{{s.id}}">{{ s.title }}</a>
+                          <a class="page-scroll" href="#{{s.slug}}">{{ s.title }}</a>
                       </li>
-                      {% endif %}
                     {% endfor %}
                 </ul>
             </div>

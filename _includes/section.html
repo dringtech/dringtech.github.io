@@ -1,5 +1,5 @@
 
-<section id="{{ include.context.id }}">
+<section id="{{ include.context.slug }}">
   <div class="container">
     <div class="row">
         <header class="col-lg-12">
@@ -7,7 +7,7 @@
           <h2>{{ include.context.subheading }}</h2>
         </header>
         <div class="col-lg-12">
-          {% include sections/{{ include.context.page }} context=include.context %}
+          {{ include.context }}
         </div>
     </div>
   </div>

@@ -7,7 +7,8 @@ layout: default
   {% include nav.html %}
   {% include header.html %}
 
-  {% for section in site.data.layout %}
+  {% assign sections = site.sections | where: "enabled","true" | sort: 'order' %}
+  {% for section in sections %}
     {% include section.html context=section %}
   {% endfor %}
 

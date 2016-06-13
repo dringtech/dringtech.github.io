@@ -35,4 +35,13 @@ compress_html:
   comments: all
 
 collections:
+  - sections
   - services
+
+defaults:
+  - scope:
+      path: ""
+      type: sections
+    values:
+      enabled: true
+      nav: true
