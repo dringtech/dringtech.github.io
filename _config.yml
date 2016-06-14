@@ -35,8 +35,10 @@ compress_html:
   comments: all
 
 collections:
-  - sections
-  - services
+  sections:
+    output: false
+  services:
+    output: false
 
 defaults:
   - scope:
@@ -45,3 +47,6 @@ defaults:
     values:
       enabled: true
       nav: true
+
+gems:
+  - jekyll-sitemap
