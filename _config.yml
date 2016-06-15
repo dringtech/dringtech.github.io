@@ -2,13 +2,19 @@ url: http://dringtech.com
 baseurl:
 
 # Site settings
-title: Dring Tech
+title: Dring Technology Solutions
 email: giles@dringtech.com
-description: "Dring Technology Solutions Limited: Enterprise IT thinking for Small Businesses. Bringing 20 years of IT strategy and implementation expertise to Small and Medium Enterprises."
+description: Enterprise IT thinking for Small and Medium Businesses
+author: dringtech
+twitter:
+  username: dringtech
+logo: img/dringtech-compact.png
 
 googleAnalyticsId: UA-60515978-1
 
+
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+
 social:
   - title: twitter
     url: https://twitter.com/dringtech
@@ -50,3 +56,4 @@ defaults:
 
 gems:
   - jekyll-sitemap
+  - jekyll-seo-tag
