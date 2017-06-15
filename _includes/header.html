@@ -4,9 +4,7 @@
             <div class="intro-text">
                 <div class="intro-lead-in">Dring Technology Solutions</div>
                 <div class="intro-heading">{{ page.header.title }}</div>
-                {% if page.header.button %}
-                <a href="#{{ page.header.button.ref }}" class="page-scroll btn btn-xl">{{ page.header.button.ref }}</a>
-                {% endif %}
+                {% include contact.html %}
             </div>
         </div>
     </header>
