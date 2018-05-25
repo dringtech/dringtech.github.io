@@ -54,6 +54,6 @@ defaults:
       enabled: true
       nav: true
 
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
