@@ -12,6 +12,8 @@ logo: img/dringtech-compact.png
 
 googleAnalyticsId: UA-60515978-1
 
+include:
+  - .well-known
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 
