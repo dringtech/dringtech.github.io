@@ -1,5 +1,8 @@
 ---
 ---
+// Custom function - dringtech namespace
+{% include js/dringtech/cookie.js %}
+
 // JQuery
 {% include js/jquery-1.11.0.js %}
 
