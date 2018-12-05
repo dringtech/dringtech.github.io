@@ -1,0 +1,11 @@
+<!-- Header -->
+<header>
+  <div class="container intro-text">
+    <div class="intro-lead-in">Dring Technology Solutions</div>
+    <div class="intro-heading">{{ page.title }}</div>
+    {% include socialcontact.html %}
+    {% if page.header.button %}
+      <a href="#{{ page.header.button.ref }}" class="page-scroll btn btn-xl">{{ page.header.button.text }}<br><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+    {% endif %}
+  </div>
+</header>

@@ -2,6 +2,7 @@ if (!window.dringtech) window.dringtech = {};
 (function () {
   var dringtech = window.dringtech;
   function list () {
+    if (document.cookie === '' ) return {};
     return document.cookie
       .split(';')
       .map(function (_) { return _.split('='); } )
