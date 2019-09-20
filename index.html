@@ -1,19 +1,15 @@
 ---
-layout: default
+layout: page
+permalink: /
+header:
+  title: Boost your business technology
+  template: home
+  button:
+    ref: services
+    text: Tell Me More
 ---
 
-<body id="page-top" class="index">
-
-  {% include nav.html %}
-  {% include header.html %}
-
-  {% assign sections = site.sections | where: "enabled","true" | sort: 'order' %}
-  {% for section in sections %}
-    {% include section.html context=section %}
-  {% endfor %}
-
-  {% include footer.html %}
-
-  <script async src="{{ "/js/site.js" | prepend: site.baseurl }}"></script>
-
-</body>
+{% assign sections = site.sections | where: "enabled","true" | sort: 'order' %}
+{% for section in sections %}
+  {% include section.html context=section %}
+{% endfor %}

@@ -1,14 +1,9 @@
 
-<section id="{{ include.context.slug }}">
-  <div class="container">
-    <div class="row">
-        <header class="col-lg-12">
-          <h1>{{ include.context.title }}</h1>
-          <h2>{{ include.context.subheading }}</h2>
-        </header>
-        <div class="col-lg-12">
-          {{ include.context }}
-        </div>
-    </div>
+<section id="{{ include.context.slug }}" class="row">
+  <header class="col-lg-12">
+    <h2>{{ include.context.subheading }}</h2>
+  </header>
+  <div class="col-lg-12">
+    {{ include.context }}
   </div>
 </section>

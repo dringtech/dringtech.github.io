@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<body id="page-top" class="index">
+
+  {% include nav.html %}
+  {% include header/{{ page.header.template | default: "default" }}.html %}
+
+  <main class="container">
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+  {% include cookie.html %}
+  <script async src="{{ "/js/site.js" | prepend: site.baseurl }}"></script>
+
+</body>
