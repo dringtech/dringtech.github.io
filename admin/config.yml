@@ -30,8 +30,7 @@ collections:
         name: date
         default: ""
         widget: datetime
-        dateFormat: LLL
-        timeFormat: false
+        format: "YYYY-MM-DD HH:mm:ss Z"
       - label: Featured Image
         required: false
         name: thumbnail
