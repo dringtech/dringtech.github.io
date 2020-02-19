@@ -19,8 +19,8 @@ if (!window.dringtech) window.dringtech = {};
     var attribs = Object.keys(options)
       .reduce(function (acc, _) {
         if (validOpts.indexOf(_) < 0) return acc;
-        if (_ === 'secure') return acc + '; '+_;
-        return acc + '; ' + _ + '=' + options[_];
+        if (_ === 'secure') return acc + ';' + _;
+        return acc + ';' + _ + '=' + options[_];
       }, '');
     var cookie = name + '=' + encodeURIComponent(value);
     document.cookie = cookie+attribs;
