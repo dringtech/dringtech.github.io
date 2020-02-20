@@ -10,9 +10,9 @@ $color-primary: #3fb114; // was fed136  websafe == #ffcc33
 $color-secondary: #33cc33; // was fec503  websage == #ffcc00
 $color-secondary-dark: #333;
 
-$fontstack: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
-$fontstack-header: "League Gothic", sans-serif;
-$fontstack-header-condensed: "League Gothic Condensed", sans-serif;
+$fontstack: 'IBM Plex Sans', sans-serif;;
+$fontstack-header: 'IBM Plex Sans', sans-serif;;
+$fontstack-header-condensed: 'IBM Plex Sans', sans-serif;;
 
 $header-image: url(../img/coffee-notes.jpg);
 $logo-image: url(../img/dringtech-compact-white.png);
@@ -22,8 +22,7 @@ $header-letter-spacing: 0.2em;
 @import
   "bootstrap.min.css",
   "font-awesome/css/font-awesome.min.css",
-  "league-gothic",
-  "roboto-slab",
+  "google-fonts",
   "dringtech",
   "section",
   "services",
