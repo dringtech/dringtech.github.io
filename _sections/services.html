@@ -11,7 +11,7 @@ order: 10
 
   {% capture modalId %}{{ service.slug }}Modal{% endcapture %}
 
-  <article class="service col-md-4">
+  <section id="service-{{ forloop.index }}"" class="service col-md-4">
     <header>
       <span class="fa-stack fa-4x">
         <i class="fa fa-circle fa-stack-2x text-primary"></i>
@@ -21,7 +21,7 @@ order: 10
     </header>
     <div class="excerpt">{{ service.excerpt }}</div>
     <p class="text-center"><a class="btn btn-xl" href="#{{ modalId }}" class="portfolio-link" data-toggle="modal">Read more</a></p>
-  </article>
+  </section>
 
   {% capture modalContent %}{{ service.content | markdownify }}{% endcapture %}
   {% include modal.html id=modalId title=service.title content=modalContent %}
