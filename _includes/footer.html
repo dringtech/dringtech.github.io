@@ -1,25 +1,27 @@
-  <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; {{ site.title }} {% include info/build-date.html %}</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        {% for network in site.social %}
-                        <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <!-- <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
-                        </li>
-                        <li><a href="#">Terms of Use</a>
-                        </li>
-                    </ul> -->
-                </div>
-            </div>
-        </div>
-    </footer>
+<footer class="flex flex-col items-center gap-2 py-2">
+  <p>Copyright &copy; {{ site.title }} {% include info/build-date.html %}</p>
+  <ul class="flex gap-2">
+    {% for network in site.social %}
+    <li>
+      <a
+        class="
+          block
+          rounded-full
+          text-center
+          w-7
+          h-7
+          text-base
+          text-white
+          hover:bg-primary
+          bg-gray-800
+          hover:text-white
+          transition-all
+          transition-duration-500
+        "
+        href="{{ network.url }}"
+        ><i class="fa fa-{{ network.title }} relative top-0.5"></i
+      ></a>
+    </li>
+    {% endfor %}
+  </ul>
+</footer>
