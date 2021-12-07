@@ -1,9 +1,7 @@
 
-<article id="{{ include.context.slug }}" class="row">
-  <header class="col-lg-12">
-    <h1>{{ include.context.subheading }}</h1>
+<article id="{{ include.context.slug }}" class="pt-6">
+  <header class="text-center pb-6">
+    <h1 class="text-3xl">{{ include.context.subheading }}</h1>
   </header>
-  <div class="col-lg-12">
-    {{ include.context }}
-  </div>
+  {{ include.context }}
 </article>

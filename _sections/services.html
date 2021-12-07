@@ -3,7 +3,7 @@ title: Services
 subheading: How can I help?
 order: 10
 ---
-<div class="row">
+<div class="m-4 md:grid grid-cols-3 gap-4">
 
 {% assign services = site.services | sort: 'order' %}
 
@@ -11,15 +11,15 @@ order: 10
 
   {% capture modalId %}{{ service.slug }}Modal{% endcapture %}
 
-  <section id="service-{{ forloop.index }}"" class="service col-md-4">
-    <header>
+  <section id="service-{{ forloop.index }}" class="service">
+    <header class="text-center">
       <span class="fa-stack fa-4x">
         <i class="fa fa-circle fa-stack-2x text-primary"></i>
         <i class="fa {{ service.icon }} fa-stack-1x fa-inverse"></i>
       </span>
-      <h1>{{ service.title }}</h1>
+      <h1 class="text-xl">{{ service.title }}</h1>
     </header>
-    <div class="excerpt">{{ service.excerpt }}</div>
+    {{ service.excerpt }}
     <p class="text-center"><a class="btn btn-xl" href="#{{ modalId }}" class="portfolio-link" data-toggle="modal">Read more</a></p>
   </section>
 
