@@ -27,6 +27,15 @@ social:
   - title: linkedin
     url: https://linkedin.com/company/dring-technology-solutions-limited
 
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - postcss.config.js
+  - tailwind.config.js
+  - node_modules
+  - package.json
+  - package_lock.json
+
 # Postal address (add as many lines as necessary)
 address:
   - line: 13 Melbourne Street
