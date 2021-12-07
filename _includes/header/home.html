@@ -1,11 +1,1 @@
-<!-- Header -->
-<header class="site-header align-center py-24 text-white text-center">
-  <h1 class="text-3xl md:text-5xl pb-6">Dring Technology Solutions</h1>
-  <h2 class="text-xl md:text-2xl">{{ site.description }}</h2>
-  <!-- {% include socialcontact.html %} -->
-  {% if page.header.button %}
-  <div>
-    <a href="#{{ page.header.button.ref }}" class="page-scroll btn btn-xl">{{ page.header.button.text }}<br><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
-  </div>
-  {% endif %}
-</header>
+{% include header/default.html title=site.title subtitle=site.description %}

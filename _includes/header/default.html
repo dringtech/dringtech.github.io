@@ -1,7 +1,6 @@
-<!-- Header -->
-<header>
-  <div class="container intro-text">
-    <div class="intro-lead-in">Dring Technology Solutions</div>
-    <div class="intro-heading">{{ page.title }}</div>
-  </div>
+{%- assign title = include.title | default: site.title -%}
+{%- assign subtitle = include.subtitle | default: page.title -%}
+<header class="site-header align-center py-24 text-white text-center">
+  <h1 class="text-3xl md:text-5xl pb-6">{{ title }}</h1>
+  <h2 class="text-xl md:text-2xl">{{ subtitle }}</h2>
 </header>
