@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  font-family: 'IBM Plex Sans', sans-serif;
+@layer base {
+  html {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 20px;
+  }
+
+  .brand-logo {
+    background-image: var(--logo-image);
+    @apply bg-left bg-no-repeat bg-contain transition-all;
+  }
+}
+
+.shrink-nav {
+  @apply bg-black;
+}
+
+.shrink-nav .brand-logo {
+  @apply h-8;
 }

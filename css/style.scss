@@ -15,12 +15,10 @@ $fontstack-header: 'IBM Plex Sans', sans-serif;
 $fontstack-header-condensed: 'IBM Plex Sans Condensed', sans-serif;
 
 $header-image: url(../img/coffee-notes.jpg);
-$logo-image: url(../img/dringtech-compact-white.png);
 
 $header-letter-spacing: 0.2em;
 
 @import
-  "bootstrap.min.css",
   "font-awesome/css/font-awesome.min.css",
   "typography",
   "dringtech",
