@@ -55,7 +55,7 @@ collections:
   sections:
     output: false
   services:
-    output: false
+    output: true
 
 defaults:
   - scope:

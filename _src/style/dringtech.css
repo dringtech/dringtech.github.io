@@ -4,13 +4,31 @@
 
 @layer base {
   html {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 20px;
+    @apply font-body text-document;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading uppercase tracking-cavernous font-bold;
   }
 
   .brand-logo {
-    background-image: var(--logo-image);
     @apply bg-left bg-no-repeat bg-contain transition-all;
+    background-image: var(--logo-image);
+  }
+
+  .site-header {
+    @apply bg-black bg-opacity-30 relative;
+  }
+
+  .site-header::after {
+    @apply bg-no-repeat bg-scroll bg-center bg-cover inset-0 absolute -z-1;
+    content: "";
+    background-image: var(--header-image);
   }
 }
 

@@ -1,5 +1,11 @@
 ---
 ---
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans|IBM+Plex+Sans+Condensed&display=swap');
+@import url("font-awesome/css/font-awesome.min.css");
+
 :root {
   --logo-image: url(../img/dringtech-compact-white.png);
+  --header-image: url(../img/coffee-notes.jpg);
+  --color-primary: #3fb114;
+  --color-primary-hilight: #33cc33;
 }

@@ -1,17 +1,12 @@
 ---
-title: Services
-subheading: How can I help?
+title: How can I help?
+name: Services
 order: 10
 ---
+{%- assign sorted_services = site.services | sort: 'order' -%}
 <div class="m-4 md:grid grid-cols-3 gap-4">
-
-{% assign services = site.services | sort: 'order' %}
-
-{% for service in services %}
-
-  {% capture modalId %}{{ service.slug }}Modal{% endcapture %}
-
-  <section id="service-{{ forloop.index }}" class="service">
+{%- for service in sorted_services %}
+  <section id="service-{{ service.slug }}">
     <header class="text-center">
       <span class="fa-stack fa-4x">
         <i class="fa fa-circle fa-stack-2x text-primary"></i>
@@ -19,13 +14,10 @@ order: 10
       </span>
       <h1 class="text-xl">{{ service.title }}</h1>
     </header>
-    {{ service.excerpt }}
-    <p class="text-center"><a class="btn btn-xl" href="#{{ modalId }}" class="portfolio-link" data-toggle="modal">Read more</a></p>
+    <div>
+      {{ service.excerpt }}
+    </div>
+    {% comment %} <p class="text-center"><a class="inline-block p-4 rounded bg-primary" href="{{ service.url | relative_path }}">Read more</a></p> {% endcomment %}
   </section>
-
-  {% capture modalContent %}{{ service.content | markdownify }}{% endcapture %}
-  {% include modal.html id=modalId title=service.title content=modalContent %}
-
-{% endfor %}
-
+{%- endfor %}
 </div>

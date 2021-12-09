@@ -8,14 +8,14 @@
   <input id='nav-trigger' type="checkbox" class="invisible"/>
 -->
 
-  <ul class="bg-black bg-opacity-20 rounded flex flex-row py-2">
+  <ul class="flex flex-row">
       <li class="hidden">
           <a href="{{ link }}"></a>
       </li>
       {% assign links = site.sections | where: "nav","true" | where: "enabled","true" | sort: 'order'%}
       {% for s in links %}
         <li>
-            <a class="text-white p-2 rounded bg-transparent hover:text-white hover:bg-primary" href="{{ link }}#{{s.slug}}">{{ s.title }}</a>
+            <a class="text-white p-2 rounded bg-transparent hover:text-white hover:bg-primary" href="{{ link }}#{{s.slug}}">{{ s.name }}</a>
         </li>
       {% endfor %}
   </ul>
